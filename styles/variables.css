@@ -1,4 +1,23 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  /* основные переменные */
+  --main-font: "IBM Plex mono";
+
+  /* размер экрана */
+  --screen-height: 668px;
+
+  /* отступы */
+  --indent-size: 10px;
+  --grid-gap-size: calc(2 * var(var(--indent-size)));
+
+  /* размер шрифта */
+  --mobile-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --laptop-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);  
+
+  /* цветовая схема (темная по умолчанию) */
+  --cover-image: url("../images/cover-image-dark.png");
+  --card-text-color: #F1B2CE;
+  --main-text-color: #000028;
+  --logo-text-color: #DB00FF;
+  --accent-color: #FF0070;
+  --record-icon-display: block;
+}
