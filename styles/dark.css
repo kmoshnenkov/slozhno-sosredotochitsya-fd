@@ -1,6 +1,9 @@
 :root.theme-dark {
   /* темная цветовая схема */
   --cover-image: url("../images/cover-image-dark.png");
+  --background-color: #000028;
+  --menu-button-color: #FF0070;
+  --card-title-color: #FF0070;
   --card-text-color: #F1B2CE;
   --main-text-color: #000028;
   --logo-text-color: #DB00FF;

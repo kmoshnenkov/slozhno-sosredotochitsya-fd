@@ -1,5 +1,6 @@
 /* общие стили страницы */
 .page {
+  background-color: var(--background-color, none);
   background-image: var(--cover-image, none);
   background-attachment: fixed;
   background-position: center;
@@ -62,25 +63,25 @@
   text-transform: lowercase;
   line-height: 1em;
   background-color: transparent;
-  color: var(--accent-color);
+  color: var(--menu-button-color);
   cursor: pointer;
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid rgb(from var(--accent-color) r g b / 0.4);
+  border: 1px solid rgb(from var(--menu-button-color) r g b / 0.4);
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--menu-button-color);
   outline: none;
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--menu-button-color);
   pointer-events: none;
 }
 
-.header__logo {
+.page__logo {
   justify-self: center;
   align-self: center;
   inline-size: 100%;
@@ -122,16 +123,20 @@
 
 /* стили списка карточек */
 .cards__title {
-  margin-block-end: 0px;
+  margin-block-end: 0;
   background-color: transparent;
   font-size: inherit;
-  color: var(--accent-color);
+  color: var(--cards-title-color);
 }
 
 .cards__list {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: var(--grid-gap-size, 20px);
+}
+
+.cards__list-title {
+  margin-block-end: 20px;
 }
 
 /* стили карточек */
@@ -200,12 +205,7 @@
   grid-template-columns: 1fr;
 }
 
-.footer__logo {
-  margin: auto;
-  font-size: var(--mobile-font-size);
-  font-weight: bold;
-  line-height: 82.5%;
-  color: var(--logo-text-color);
+.footer__logo { 
   text-shadow: 2px 2px 0px var(--accent-color);
   text-align: center;
 }
@@ -260,8 +260,7 @@
     inline-size: calc(50% - 10px);
   }
 
-  .header__logo,
-  .footer__logo {
+  .page__logo {
     font-size: var(--laptop-font-size);
   }
 
@@ -298,7 +297,6 @@
   }
 
   .gallery__image {
-    object-fit: cover;
     object-position: center;
   }
 }
@@ -328,11 +326,11 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .section__row > :nth-child(2n) {
+  .section__row > .cards__list {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .section__column > :nth-child(2n) {
+  .section__column > .cards__list {
     grid-column: span 2;
   }
 }

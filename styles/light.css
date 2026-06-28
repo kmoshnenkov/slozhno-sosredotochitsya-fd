@@ -1,8 +1,11 @@
 :root.theme-light {
   /* светлая цветовая схема */
   --cover-image: url("../images/cover-image-light.png");
-  --main-text-color: #353430;
+  --background-color: #FFF1F7;
+  --menu-button-color: #353430;
+  --cards-title-color: #353430;
   --card-text-color: #353430;
+  --main-text-color: #353430;
   --logo-text-color: #FFC2E6;
   --accent-color: #FF8DCB;
   --record-icon-display: none;
@@ -11,8 +14,11 @@
 @media (prefers-color-scheme: light) {
   :root {
     --cover-image: url("../images/cover-image-light.png");
-    --main-text-color: #353430;
+    --background-color: #FFF1F7;
+    --menu-button-color: #353430;
+    --cards-title-color: #353430;
     --card-text-color: #353430;
+    --main-text-color: #353430;
     --logo-text-color: #FFC2E6;
     --accent-color: #FF8DCB;
     --record-icon-display: none;
