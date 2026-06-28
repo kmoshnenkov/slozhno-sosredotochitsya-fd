@@ -228,7 +228,7 @@
   margin: var(--indent-size);
   inline-size: 25px;
   block-size: 25px;
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--menu-button-color);
 }
 
 .decorated-zone::before {
