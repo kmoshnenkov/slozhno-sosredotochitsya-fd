@@ -11,17 +11,17 @@
 
   /* размер шрифта */
   --mobile-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --laptop-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);  
+  --laptop-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 
-  /* цветовая схема (темная по умолчанию) */ 
+  /* цветовая схема (темная по умолчанию) */
   --cover-image: url("../images/cover-image-dark.png");
   --background-color: #000028;
-  --menu-button-color: #FF0070;
-  --cards-title-color: #FF0070;
-  --card-text-color: #F1B2CE;
+  --menu-button-color: #ff0070;
+  --cards-title-color: #ff0070;
+  --card-text-color: #f1b2ce;
   --main-text-color: #000028;
-  --logo-text-color: #DB00FF;
-  --accent-color: #FF0070;
+  --logo-text-color: #db00ff;
+  --accent-color: #ff0070;
   --record-icon-display: block;
 }
 
